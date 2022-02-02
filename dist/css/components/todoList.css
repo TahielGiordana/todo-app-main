@@ -1,0 +1,9 @@
+.content__list .list-item {
+  border-radius: 0;
+  border-bottom: 1px solid var(--dt-v-dark-grayish-blue);
+}
+.content__list .list-item:first-child {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+/*# sourceMappingURL=todoList.css.map */

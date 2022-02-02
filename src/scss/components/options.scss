@@ -1,0 +1,29 @@
+@use "../util/" as *;
+
+.content__options {
+  background-color: var(--dt-v-dark-desat-blue);
+  border-radius: 0 0 0.4rem 0.4rem;
+  color: var(--dt-light-grayish-blue);
+
+  &__filters {
+    list-style: none;
+
+    li:hover {
+      color: var(--accent);
+      cursor: pointer;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+
+    &:hover {
+      color: var(--accent);
+      cursor: pointer;
+    }
+  }
+}

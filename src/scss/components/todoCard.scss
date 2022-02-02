@@ -1,0 +1,28 @@
+@use "../util" as *;
+
+.list-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: rem(16) rem(24);
+  gap: rem(20);
+  background-color: var(--dt-v-dark-desat-blue);
+  border-radius: 0.4rem;
+
+  &__text {
+    width: 80%;
+    border: none;
+    background-color: transparent;
+    color: var(--dt-light-grayish-blue-hover);
+    font-size: rem(16);
+    font-family: inherit;
+  }
+
+  &__text:focus {
+    outline: none;
+  }
+
+  &__text::placeholder {
+    color: var(--dt-light-grayish-blue);
+  }
+}

@@ -1,0 +1,20 @@
+@use "../util" as *;
+
+.check,
+.uncheck {
+  width: rem(24);
+  height: rem(24);
+  border-radius: 50%;
+}
+
+.check {
+  background-image: url("/images/icon-check.svg"), var(--check-bg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.uncheck {
+  background-color: transparent;
+  border: 2px solid var(--dt-v-dark-grayish-blue);
+}

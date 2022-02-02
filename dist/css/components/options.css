@@ -1,0 +1,25 @@
+.content__options {
+  background-color: var(--dt-v-dark-desat-blue);
+  border-radius: 0 0 0.4rem 0.4rem;
+  color: var(--dt-light-grayish-blue);
+}
+.content__options__filters {
+  list-style: none;
+}
+.content__options__filters li:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+.content__options button {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+.content__options button:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=options.css.map */

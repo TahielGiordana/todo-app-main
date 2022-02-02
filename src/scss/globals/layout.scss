@@ -1,0 +1,48 @@
+@use "../util" as *;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  min-width: rem(300);
+  max-width: rem(600);
+  width: rem(600);
+  padding: rem(75) rem(25);
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: rem(20);
+  }
+
+  &__new {
+    display: flex;
+    margin-bottom: rem(40);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    max-height: rem(440);
+    overflow: hidden;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(16) rem(24);
+
+    &__filters {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+      margin: 0;
+    }
+  }
+}

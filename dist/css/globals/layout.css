@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  min-width: 18.75rem;
+  max-width: 37.5rem;
+  width: 37.5rem;
+  padding: 4.6875rem 1.5625rem;
+}
+.content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+.content__new {
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.content__list {
+  display: flex;
+  flex-direction: column;
+  max-height: 27.5rem;
+  overflow: hidden;
+}
+.content__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.content__options__filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+/*# sourceMappingURL=layout.css.map */

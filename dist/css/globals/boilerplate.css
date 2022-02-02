@@ -1,0 +1,31 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-josefin);
+  background-color: var(--dt-v-dark-blue);
+  background-image: url("/images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+}
+
+.dark-mode {
+  background-color: var(--dt-v-dark-blue);
+  background-image: url("/images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+}
+
+.light-mode {
+  background-color: var(--lt-v-light-gray);
+}
+
+/*# sourceMappingURL=boilerplate.css.map */

@@ -1,0 +1,25 @@
+.list-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1.25rem;
+  background-color: var(--dt-v-dark-desat-blue);
+  border-radius: 0.4rem;
+}
+.list-item__text {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  color: var(--dt-light-grayish-blue-hover);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.list-item__text:focus {
+  outline: none;
+}
+.list-item__text::placeholder {
+  color: var(--dt-light-grayish-blue);
+}
+
+/*# sourceMappingURL=todoCard.css.map */

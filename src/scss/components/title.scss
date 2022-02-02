@@ -1,0 +1,8 @@
+@use "../util" as *;
+
+h1 {
+  color: var(--lt-v-light-gray);
+  font-size: rem(32);
+  text-transform: uppercase;
+  letter-spacing: rem(16);
+}
