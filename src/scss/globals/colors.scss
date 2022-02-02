@@ -1,11 +1,13 @@
 :root {
   --accent: hsl(220, 98%, 61%);
   --check-bg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  //Light Theme
   --lt-v-light-gray: hsl(0, 0%, 98%);
   --lt-v-light-grayish-blue: hsl(236, 33%, 92%);
   --lt-light-grayish-blue: hsl(233, 11%, 84%);
   --lt-dark-grayish-blue: hsl(235, 9%, 61%);
   --lt-v-dark-grayish-blue: hsl(235, 19%, 35%);
+  //Dark Theme
   --dt-v-dark-blue: hsl(235, 21%, 11%);
   --dt-v-dark-desat-blue: hsl(235, 24%, 18%);
   --dt-light-grayish-blue: hsl(234, 39%, 85%);
@@ -14,9 +16,3 @@
   --dt-v-dark-grayish-blue: hsl(233, 14%, 35%);
   --dt-vv-darl-grayish-blue: hsl(237, 14%, 26%);
 }
-
-:root {
-  --font-josefin: "Josefin Sans", sans-serif;
-}
-
-/*# sourceMappingURL=style.css.map */
