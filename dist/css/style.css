@@ -163,6 +163,7 @@ h1 {
 }
 
 .list-item {
+  position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -178,12 +179,26 @@ h1 {
   color: var(--dt-light-grayish-blue-hover);
   font-size: 1rem;
   font-family: inherit;
+  overflow: hidden;
 }
 .list-item__text:focus {
   outline: none;
 }
 .list-item__text::placeholder {
   color: var(--dt-light-grayish-blue);
+}
+.list-item__delete {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  transform: translate(0, -50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: transparent url("/images/icon-cross.svg") no-repeat;
+}
+.list-item__delete:hover {
+  cursor: pointer;
 }
 
 .content__list .list-item {

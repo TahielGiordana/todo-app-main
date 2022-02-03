@@ -1,6 +1,7 @@
 @use "../util" as *;
 
 .list-item {
+  position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -16,6 +17,7 @@
     color: var(--dt-light-grayish-blue-hover);
     font-size: rem(16);
     font-family: inherit;
+    overflow: hidden;
   }
 
   &__text:focus {
@@ -24,5 +26,20 @@
 
   &__text::placeholder {
     color: var(--dt-light-grayish-blue);
+  }
+
+  &__delete {
+    position: absolute;
+    top: 50%;
+    right: rem(20);
+    transform: translate(0, -50%);
+    width: rem(20);
+    height: rem(20);
+    border: none;
+    background: transparent url("/images/icon-cross.svg") no-repeat;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

@@ -4,11 +4,24 @@ const addTodoElement = document.getElementById("addNewTodo");
 //Create a new todo
 const addTodo = () => {
   let text = addTodoElement.value;
-  todoList.innerHTML += `<div class="list-item">
-  <button class="uncheck"></button>
-  <span class="list-item__text" />${text}</span>
-</div>`;
-  addTodoElement.value = "";
+  todoList.appendChild(createCard(text));
+};
+
+const createCard = (text) => {
+  let card = document.createElement("div");
+  card.classList.add("list-item");
+  let checkBtn = document.createElement("button");
+  checkBtn.classList.add("uncheck");
+  let cardText = document.createElement("span");
+  cardText.classList.add("list-item__text");
+  cardText.innerText = text;
+  let deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("list-item__delete");
+  deleteBtn.addEventListener("click", deleteTodo);
+  card.appendChild(checkBtn);
+  card.appendChild(cardText);
+  card.append(deleteBtn);
+  return card;
 };
 
 addTodoElement.addEventListener("keyup", (event) => {
@@ -16,3 +29,9 @@ addTodoElement.addEventListener("keyup", (event) => {
     addTodo();
   }
 });
+
+//Delete a todo
+const deleteTodo = (e) => {
+  let card = e.target.parentElement;
+  todoList.removeChild(card);
+};
