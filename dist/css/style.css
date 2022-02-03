@@ -71,7 +71,10 @@ body {
   min-width: 18.75rem;
   max-width: 37.5rem;
   width: 37.5rem;
-  padding: 4.6875rem 1.5625rem;
+  padding: 3.125rem 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .content__title {
   display: flex;
@@ -102,6 +105,18 @@ body {
   gap: 1rem;
   margin: 0;
 }
+.content .instructions {
+  position: absolute;
+  left: 50%;
+  bottom: 3.125rem;
+  transform: translate(-50%, 0);
+  text-align: center;
+  margin-top: 3rem;
+}
+.content .instructions p {
+  color: var(--dt-v-dark-desat-blue);
+  margin: 0;
+}
 
 h1 {
   color: var(--lt-v-light-gray);
@@ -129,12 +144,17 @@ h1 {
   height: 1.5rem;
   border-radius: 50%;
 }
+.check:hover,
+.uncheck:hover {
+  cursor: pointer;
+}
 
 .check {
   background-image: url("/images/icon-check.svg"), var(--check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  border: none;
 }
 
 .uncheck {
@@ -178,13 +198,6 @@ h1 {
   background-color: var(--dt-v-dark-desat-blue);
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--dt-light-grayish-blue);
-}
-.content__options__filters {
-  list-style: none;
-}
-.content__options__filters li:hover {
-  color: var(--accent);
-  cursor: pointer;
 }
 .content__options button {
   background-color: transparent;

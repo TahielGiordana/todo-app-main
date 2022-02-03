@@ -30,44 +30,41 @@
         <!-- Toggle Dark/Light Mode -->
       </div>
       <div class="content__new list-item">
-        <div class="uncheck"></div>
+        <button class="uncheck"></button>
         <input
           type="text"
           placeholder="Create a new todo..."
           class="list-item__text"
+          id="addNewTodo"
         />
       </div>
       <div class="content__list">
         <div class="list-item">
-          <div class="uncheck"></div>
+          <button class="uncheck"></button>
           <span class="list-item__text" />Jog around the park 3x</span>
         </div>
         <div class="list-item">
-          <div class="uncheck"></div>
+          <button class="check"></button>
           <span class="list-item__text" />Jog around the park 3x</span>
         </div>
         <div class="list-item">
-          <div class="uncheck"></div>
-          <span class="list-item__text" />Jog around the park 3x</span>
-        </div>
-        <div class="list-item">
-          <div class="uncheck"></div>
-          <span class="list-item__text" />Jog around the park 3x</span>
-        </div>
-        <div class="list-item">
-          <div class="uncheck"></div>
+          <button class="uncheck"></button>
           <span class="list-item__text" />Jog around the park 3x</span>
         </div>
       </div>
       <div class="content__options">
         <span>5 items left</span>
-        <ul class="content__options__filters">
-          <li>All</li>
-          <li>Active</li>
-          <li>Completed</li>
-        </ul>
-        <button>Clear Completed</button>
+        <div class="content__options__filters">
+          <button id="btnFilterAll">All</buttoni>
+          <button id="btnFilterActive">Active</button>
+          <button id="btnFilterCompleted">Completed</button>
+        </div>
+        <button id="btnClearCompleted">Clear Completed</button>
+      </div>
+      <div class="instructions">
+        <p>Drag and drop to reorder the list</p>
       </div>
     </div>
+    <script src="/dist/js/script.js"></script>
   </body>
 </html>

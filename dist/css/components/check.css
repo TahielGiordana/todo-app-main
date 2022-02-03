@@ -4,12 +4,17 @@
   height: 1.5rem;
   border-radius: 50%;
 }
+.check:hover,
+.uncheck:hover {
+  cursor: pointer;
+}
 
 .check {
   background-image: url("/images/icon-check.svg"), var(--check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  border: none;
 }
 
 .uncheck {

@@ -5,15 +5,6 @@
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--dt-light-grayish-blue);
 
-  &__filters {
-    list-style: none;
-
-    li:hover {
-      color: var(--accent);
-      cursor: pointer;
-    }
-  }
-
   button {
     background-color: transparent;
     border: none;
