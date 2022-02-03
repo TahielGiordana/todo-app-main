@@ -1,25 +1,21 @@
 @use "../util" as *;
 
-.check,
-.uncheck {
+.list-item__check {
   width: rem(24);
   height: rem(24);
   border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--dt-v-dark-grayish-blue);
 
   &:hover {
     cursor: pointer;
   }
 }
 
-.check {
+.checked {
   background-image: url("/images/icon-check.svg"), var(--check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
   border: none;
-}
-
-.uncheck {
-  background-color: transparent;
-  border: 2px solid var(--dt-v-dark-grayish-blue);
 }

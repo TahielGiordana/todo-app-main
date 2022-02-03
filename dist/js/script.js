@@ -11,7 +11,8 @@ const createCard = (text) => {
   let card = document.createElement("div");
   card.classList.add("list-item");
   let checkBtn = document.createElement("button");
-  checkBtn.classList.add("uncheck");
+  checkBtn.classList.add("list-item__check");
+  checkBtn.addEventListener("click", markTodo);
   let cardText = document.createElement("span");
   cardText.classList.add("list-item__text");
   cardText.innerText = text;
@@ -34,4 +35,9 @@ addTodoElement.addEventListener("keyup", (event) => {
 const deleteTodo = (e) => {
   let card = e.target.parentElement;
   todoList.removeChild(card);
+};
+
+//Mark a todo
+const markTodo = (e) => {
+  e.target.classList.toggle("checked");
 };
