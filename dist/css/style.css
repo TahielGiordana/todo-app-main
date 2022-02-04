@@ -220,5 +220,8 @@ h1 {
   color: var(--accent);
   cursor: pointer;
 }
+.content__options p {
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
