@@ -25,6 +25,7 @@
   color: var(--dt-light-grayish-blue);
 }
 .list-item__delete {
+  display: none;
   position: absolute;
   top: 50%;
   right: 1.25rem;
@@ -36,6 +37,9 @@
 }
 .list-item__delete:hover {
   cursor: pointer;
+}
+.list-item:hover .list-item__delete {
+  display: block;
 }
 
 .completed {

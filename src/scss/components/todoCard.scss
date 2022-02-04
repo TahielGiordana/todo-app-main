@@ -30,6 +30,7 @@
   }
 
   &__delete {
+    display: none;
     position: absolute;
     top: 50%;
     right: rem(20);
@@ -42,6 +43,10 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  &:hover &__delete {
+    display: block;
   }
 }
 
