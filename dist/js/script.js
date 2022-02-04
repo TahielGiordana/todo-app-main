@@ -90,3 +90,16 @@ function filterTodo(state) {
     });
   }
 }
+
+//Clear completed
+const btnClearCompleted = document.getElementById("btnClearCompleted");
+btnClearCompleted.addEventListener("click", clearCompleted);
+
+function clearCompleted() {
+  let cards = todoList.querySelectorAll(".list-item");
+  cards.forEach((element) => {
+    if (element.classList.contains("completed")) {
+      todoList.removeChild(element);
+    }
+  });
+}
