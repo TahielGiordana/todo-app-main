@@ -7,12 +7,13 @@
   gap: 1.25rem;
   background-color: var(--dt-v-dark-desat-blue);
   border-radius: 0.4rem;
+  color: var(--dt-light-grayish-blue-hover);
 }
 .list-item__text {
   width: 80%;
   border: none;
   background-color: transparent;
-  color: var(--dt-light-grayish-blue-hover);
+  color: inherit;
   font-size: 1rem;
   font-family: inherit;
   overflow: hidden;
@@ -35,6 +36,11 @@
 }
 .list-item__delete:hover {
   cursor: pointer;
+}
+
+.completed {
+  color: var(--dt-vv-darl-grayish-blue);
+  text-decoration: line-through var(--dt-vv-darl-grayish-blue);
 }
 
 /*# sourceMappingURL=todoCard.css.map */

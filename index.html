@@ -38,16 +38,29 @@
           id="addNewTodo"
         />
       </div>
-      <div class="content__list">
-      </div>
+      <div class="content__list"></div>
       <div class="content__options">
         <p><span id="itemsLeft">0</span> items left</p>
         <div class="content__options__filters">
-          <button id="btnFilterAll">All</buttoni>
-          <button id="btnFilterActive">Active</button>
-          <button id="btnFilterCompleted">Completed</button>
+          <button
+            id="btnFilterAll"
+            class="content__options__filters__btn content__options__filters__btn--selected"
+          >
+            All
+          </button>
+          <button id="btnFilterActive" class="content__options__filters__btn">
+            Active
+          </button>
+          <button
+            id="btnFilterCompleted"
+            class="content__options__filters__btn"
+          >
+            Completed
+          </button>
         </div>
-        <button id="btnClearCompleted">Clear Completed</button>
+        <button id="btnClearCompleted" class="content__options__filters__btn">
+          Clear Completed
+        </button>
       </div>
       <div class="instructions">
         <p>Drag and drop to reorder the list</p>

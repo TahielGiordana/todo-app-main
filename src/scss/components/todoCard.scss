@@ -9,12 +9,13 @@
   gap: rem(20);
   background-color: var(--dt-v-dark-desat-blue);
   border-radius: 0.4rem;
+  color: var(--dt-light-grayish-blue-hover);
 
   &__text {
     width: 80%;
     border: none;
     background-color: transparent;
-    color: var(--dt-light-grayish-blue-hover);
+    color: inherit;
     font-size: rem(16);
     font-family: inherit;
     overflow: hidden;
@@ -42,4 +43,9 @@
       cursor: pointer;
     }
   }
+}
+
+.completed {
+  color: var(--dt-vv-darl-grayish-blue);
+  text-decoration: line-through var(--dt-vv-darl-grayish-blue);
 }

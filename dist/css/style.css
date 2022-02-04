@@ -147,6 +147,7 @@ h1 {
 }
 .list-item__check:hover {
   cursor: pointer;
+  border: 2px solid var(--dt-light-grayish-blue-hover);
 }
 
 .checked {
@@ -166,12 +167,13 @@ h1 {
   gap: 1.25rem;
   background-color: var(--dt-v-dark-desat-blue);
   border-radius: 0.4rem;
+  color: var(--dt-light-grayish-blue-hover);
 }
 .list-item__text {
   width: 80%;
   border: none;
   background-color: transparent;
-  color: var(--dt-light-grayish-blue-hover);
+  color: inherit;
   font-size: 1rem;
   font-family: inherit;
   overflow: hidden;
@@ -196,6 +198,11 @@ h1 {
   cursor: pointer;
 }
 
+.completed {
+  color: var(--dt-vv-darl-grayish-blue);
+  text-decoration: line-through var(--dt-vv-darl-grayish-blue);
+}
+
 .content__list .list-item {
   border-radius: 0;
   border-bottom: 1px solid var(--dt-v-dark-grayish-blue);
@@ -209,16 +216,19 @@ h1 {
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--dt-light-grayish-blue);
 }
-.content__options button {
+.content__options__filters__btn {
   background-color: transparent;
   border: none;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
 }
-.content__options button:hover {
+.content__options__filters__btn:hover {
   color: var(--accent);
   cursor: pointer;
+}
+.content__options__filters__btn--selected {
+  color: var(--accent);
 }
 .content__options p {
   margin: 0;

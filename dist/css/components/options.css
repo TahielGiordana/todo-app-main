@@ -3,16 +3,19 @@
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--dt-light-grayish-blue);
 }
-.content__options button {
+.content__options__filters__btn {
   background-color: transparent;
   border: none;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
 }
-.content__options button:hover {
+.content__options__filters__btn:hover {
   color: var(--accent);
   cursor: pointer;
+}
+.content__options__filters__btn--selected {
+  color: var(--accent);
 }
 .content__options p {
   margin: 0;

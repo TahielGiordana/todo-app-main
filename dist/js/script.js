@@ -61,17 +61,40 @@ const btnFilterAll = document.getElementById("btnFilterAll");
 const btnFilterActive = document.getElementById("btnFilterActive");
 const btnFilterCompleted = document.getElementById("btnFilterCompleted");
 
-btnFilterActive.addEventListener("click", () => {
+btnFilterActive.addEventListener("click", (e) => {
   filterTodo("active");
+  markFilterSelected(e.target);
 });
 
-btnFilterCompleted.addEventListener("click", () => {
+btnFilterCompleted.addEventListener("click", (e) => {
   filterTodo("completed");
+  markFilterSelected(e.target);
 });
 
-btnFilterAll.addEventListener("click", () => {
+btnFilterAll.addEventListener("click", (e) => {
   filterTodo("all");
+  markFilterSelected(e.target);
 });
+
+const markFilterSelected = (element) => {
+  let siblings = getAllSiblings(element);
+  siblings.forEach((element) => {
+    element.style.color = "inherit";
+  });
+  element.style.color = "var(--accent)";
+};
+
+function getAllSiblings(elem) {
+  let siblings = [];
+  let sibling = elem.parentNode.firstElementChild;
+  do {
+    if (sibling != elem) {
+      siblings.push(sibling);
+    }
+  } while ((sibling = sibling.nextElementSibling));
+
+  return siblings;
+}
 
 function filterTodo(state) {
   let cards = todoList.querySelectorAll(".list-item");
