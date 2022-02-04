@@ -30,6 +30,7 @@ const createCard = (text) => {
 addTodoElement.addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     addTodo();
+    addTodoElement.value = "";
   }
 });
 
@@ -54,3 +55,38 @@ const markTodo = (e) => {
     itemsLeft.innerHTML = parseInt(itemsLeft.textContent) + 1;
   }
 };
+
+//Filter todo
+const btnFilterAll = document.getElementById("btnFilterAll");
+const btnFilterActive = document.getElementById("btnFilterActive");
+const btnFilterCompleted = document.getElementById("btnFilterCompleted");
+
+btnFilterActive.addEventListener("click", () => {
+  filterTodo("active");
+});
+
+btnFilterCompleted.addEventListener("click", () => {
+  filterTodo("completed");
+});
+
+btnFilterAll.addEventListener("click", () => {
+  filterTodo("all");
+});
+
+function filterTodo(state) {
+  let cards = todoList.querySelectorAll(".list-item");
+
+  if (state == "all") {
+    cards.forEach((element) => {
+      element.style.display = "flex";
+    });
+  } else {
+    cards.forEach((element) => {
+      if (!element.classList.contains(state)) {
+        element.style.display = "none";
+      } else {
+        element.style.display = "flex";
+      }
+    });
+  }
+}
