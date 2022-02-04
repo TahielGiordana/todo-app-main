@@ -16,14 +16,15 @@ const createCard = (text) => {
   checkBtn.classList.add("list-item__check");
   checkBtn.addEventListener("click", markTodo);
   let cardText = document.createElement("span");
-  cardText.classList.add("list-item__text");
+  cardText.classList.add("list-item__text", "text--clickable");
+  cardText.addEventListener("click", markTodo);
   cardText.innerText = text;
   let deleteBtn = document.createElement("button");
   deleteBtn.classList.add("list-item__delete");
   deleteBtn.addEventListener("click", deleteTodo);
   card.appendChild(checkBtn);
   card.appendChild(cardText);
-  card.append(deleteBtn);
+  card.appendChild(deleteBtn);
   return card;
 };
 
@@ -45,7 +46,7 @@ const deleteTodo = (e) => {
 
 //Mark a todo
 const markTodo = (e) => {
-  if (e.target.classList.toggle("checked")) {
+  if (e.target.parentElement.firstElementChild.classList.toggle("checked")) {
     e.target.parentElement.classList.remove("active");
     e.target.parentElement.classList.add("completed");
     itemsLeft.innerHTML = parseInt(itemsLeft.textContent) - 1;

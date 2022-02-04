@@ -43,4 +43,9 @@
   text-decoration: line-through var(--dt-vv-darl-grayish-blue);
 }
 
+.text--clickable:hover {
+  color: var(--dt-light-grayish-blue-hover);
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=todoCard.css.map */
