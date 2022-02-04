@@ -9,6 +9,10 @@
   cursor: pointer;
   border: 2px solid var(--dt-light-grayish-blue-hover);
 }
+.list-item__check--inactive:hover {
+  cursor: default;
+  border: 2px solid var(--dt-v-dark-grayish-blue);
+}
 
 .checked {
   background-image: url("/images/icon-check.svg"), var(--check-bg);

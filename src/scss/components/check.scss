@@ -11,6 +11,11 @@
     cursor: pointer;
     border: 2px solid var(--dt-light-grayish-blue-hover);
   }
+
+  &--inactive:hover {
+    cursor: default;
+    border: 2px solid var(--dt-v-dark-grayish-blue);
+  }
 }
 
 .checked {
