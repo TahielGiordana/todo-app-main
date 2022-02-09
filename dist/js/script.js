@@ -12,6 +12,7 @@ const addTodo = () => {
 const createCard = (text) => {
   let card = document.createElement("div");
   card.classList.add("list-item", "active");
+  card.draggable = true;
   let checkBtn = document.createElement("button");
   checkBtn.classList.add("list-item__check");
   checkBtn.addEventListener("click", markTodo);
@@ -129,7 +130,20 @@ function clearCompleted() {
 }
 
 //Toggle Light/Dark Mode
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.documentElement.classList.add("dark-mode");
+} else {
+  document.documentElement.classList.remove("dark-mode");
+}
+
 const btnToggleMode = document.getElementById("btnToggleMode");
+const prefersDarkScheme = window.matchMedia("(prefered-color-scheme: dark)");
+
 btnToggleMode.addEventListener("click", () => {
+  var theme = document.documentElement.classList.contains("dark-mode")
+    ? "light"
+    : "dark";
   document.documentElement.classList.toggle("dark-mode");
+  localStorage.setItem("theme", theme);
 });
