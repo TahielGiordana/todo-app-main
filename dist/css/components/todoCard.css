@@ -5,9 +5,9 @@
   align-items: center;
   padding: 1rem 1.5rem;
   gap: 1.25rem;
-  background-color: var(--dt-v-dark-desat-blue);
+  background-color: var(--clr-list);
   border-radius: 0.4rem;
-  color: var(--dt-light-grayish-blue-hover);
+  color: var(--clr-text);
 }
 .list-item__text {
   width: 80%;
@@ -22,7 +22,7 @@
   outline: none;
 }
 .list-item__text::placeholder {
-  color: var(--dt-light-grayish-blue);
+  color: var(--clr-filters);
 }
 .list-item__delete {
   display: none;
@@ -43,12 +43,11 @@
 }
 
 .completed {
-  color: var(--dt-vv-darl-grayish-blue);
-  text-decoration: line-through var(--dt-vv-darl-grayish-blue);
+  color: var(--clr-dashed);
+  text-decoration: line-through var(--clr-dashed);
 }
 
 .text--clickable:hover {
-  color: var(--dt-light-grayish-blue-hover);
   cursor: pointer;
 }
 

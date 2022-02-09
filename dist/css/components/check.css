@@ -3,19 +3,19 @@
   height: 1.5rem;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid var(--dt-v-dark-grayish-blue);
+  border: 2px solid var(--clr-check-border);
 }
 .list-item__check:hover {
   cursor: pointer;
-  border: 2px solid var(--dt-light-grayish-blue-hover);
+  border: 2px solid var(--clr-dashed);
 }
 .list-item__check--inactive:hover {
   cursor: default;
-  border: 2px solid var(--dt-v-dark-grayish-blue);
+  border: 2px solid var(--clr-check-border);
 }
 
 .checked {
-  background-image: url("/images/icon-check.svg"), var(--check-bg);
+  background-image: url("/images/icon-check.svg"), var(--clr-check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;

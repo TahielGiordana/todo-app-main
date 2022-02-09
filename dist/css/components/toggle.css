@@ -1,6 +1,6 @@
 .toggle {
   background-color: transparent;
-  background-image: url("/images/icon-sun.svg");
+  background-image: url("/images/icon-moon.svg");
   background-repeat: no-repeat;
   background-position: top right;
   border: none;
@@ -9,6 +9,10 @@
 }
 .toggle:hover {
   cursor: pointer;
+}
+
+:root.dark-mode .toggle {
+  background-image: url("/images/icon-sun.svg");
 }
 
 /*# sourceMappingURL=toggle.css.map */

@@ -1,7 +1,7 @@
 .content__options {
-  background-color: var(--dt-v-dark-desat-blue);
+  background-color: var(--clr-list);
   border-radius: 0 0 0.4rem 0.4rem;
-  color: var(--dt-light-grayish-blue);
+  color: var(--clr-filters);
 }
 .content__options__filters__btn {
   background-color: transparent;
@@ -11,11 +11,11 @@
   color: inherit;
 }
 .content__options__filters__btn:hover {
-  color: var(--accent);
+  color: var(--clr-text-hover);
   cursor: pointer;
 }
 .content__options__filters__btn--selected {
-  color: var(--accent);
+  color: var(--clr-accent);
 }
 .content__options p {
   margin: 0;

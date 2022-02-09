@@ -7,9 +7,9 @@
   align-items: center;
   padding: rem(16) rem(24);
   gap: rem(20);
-  background-color: var(--dt-v-dark-desat-blue);
+  background-color: var(--clr-list);
   border-radius: 0.4rem;
-  color: var(--dt-light-grayish-blue-hover);
+  color: var(--clr-text);
 
   &__text {
     width: 80%;
@@ -26,7 +26,7 @@
   }
 
   &__text::placeholder {
-    color: var(--dt-light-grayish-blue);
+    color: var(--clr-filters);
   }
 
   &__delete {
@@ -51,11 +51,10 @@
 }
 
 .completed {
-  color: var(--dt-vv-darl-grayish-blue);
-  text-decoration: line-through var(--dt-vv-darl-grayish-blue);
+  color: var(--clr-dashed);
+  text-decoration: line-through var(--clr-dashed);
 }
 
 .text--clickable:hover {
-  color: var(--dt-light-grayish-blue-hover);
   cursor: pointer;
 }

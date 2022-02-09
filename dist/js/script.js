@@ -80,9 +80,9 @@ btnFilterAll.addEventListener("click", (e) => {
 const markFilterSelected = (element) => {
   let siblings = getAllSiblings(element);
   siblings.forEach((element) => {
-    element.style.color = "inherit";
+    element.classList.remove("content__options__filters__btn--selected");
   });
-  element.style.color = "var(--accent)";
+  element.classList.add("content__options__filters__btn--selected");
 };
 
 function getAllSiblings(elem) {
@@ -127,3 +127,9 @@ function clearCompleted() {
     }
   });
 }
+
+//Toggle Light/Dark Mode
+const btnToggleMode = document.getElementById("btnToggleMode");
+btnToggleMode.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-mode");
+});
