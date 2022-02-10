@@ -2,6 +2,7 @@
   background-color: var(--clr-list);
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--clr-filters);
+  box-shadow: 0 0.5rem 1rem var(--clr-shadow);
 }
 .content__options__filters__btn {
   background-color: transparent;

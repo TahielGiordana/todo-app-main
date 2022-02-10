@@ -19,6 +19,16 @@ body {
   background-size: auto 300px;
   background-position: top center;
 }
+@media (max-width: 63.9375em) {
+  body {
+    background-size: auto 200px;
+  }
+}
+@media (min-width: 87.5em) {
+  body {
+    background-size: 100%;
+  }
+}
 
 :root.dark-mode body {
   background-image: url("/images/bg-desktop-dark.jpg");

@@ -5,11 +5,15 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: rem(16) rem(24);
+  padding: rem(24);
   gap: rem(20);
   background-color: var(--clr-list);
   border-radius: 0.4rem;
   color: var(--clr-text);
+
+  @include breakpoint-down(medium) {
+    padding: rem(16);
+  }
 
   &__text {
     width: 80%;

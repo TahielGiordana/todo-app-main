@@ -10,6 +10,7 @@
   --clr-title: hsl(0, 0%, 98%);
   --clr-check-border: hsl(236, 33%, 92%);
   --clr-dashed: hsl(233, 11%, 84%);
+  --clr-shadow: hsl(233, 11%, 84%);
   --clr-filters: hsl(235, 9%, 61%);
   --clr-text: hsl(235, 19%, 35%);
   --clr-text-hover: hsl(235, 19%, 35%);
@@ -17,6 +18,7 @@
 
 :root.dark-mode {
   --clr-bg: hsl(235, 21%, 11%);
+  --clr-shadow: hsl(235, 21%, 11%);
   --clr-list: hsl(235, 24%, 18%);
   --clr-title: hsl(236, 33%, 92%);
   --clr-text: hsl(236, 33%, 92%);

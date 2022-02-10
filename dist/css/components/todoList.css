@@ -1,9 +1,10 @@
+.content__list {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
 .content__list .list-item {
   border-radius: 0;
   border-bottom: 1px solid var(--clr-check-border);
-}
-.content__list .list-item:first-child {
-  border-radius: 0.4rem 0.4rem 0 0;
+  padding: 1.5rem;
 }
 
 /*# sourceMappingURL=todoList.css.map */

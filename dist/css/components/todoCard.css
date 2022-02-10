@@ -3,11 +3,16 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   gap: 1.25rem;
   background-color: var(--clr-list);
   border-radius: 0.4rem;
   color: var(--clr-text);
+}
+@media (max-width: 63.9375em) {
+  .list-item {
+    padding: 1rem;
+  }
 }
 .list-item__text {
   width: 80%;

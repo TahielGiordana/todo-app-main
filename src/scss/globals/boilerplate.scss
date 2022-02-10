@@ -1,3 +1,5 @@
+@use "../util/" as *;
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -18,6 +20,14 @@ body {
   background-repeat: no-repeat;
   background-size: auto 300px;
   background-position: top center;
+
+  @include breakpoint-down(medium) {
+    background-size: auto 200px;
+  }
+
+  @include breakpoint(xlarge) {
+    background-size: 100%;
+  }
 }
 
 :root.dark-mode {

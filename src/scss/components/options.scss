@@ -4,6 +4,7 @@
   background-color: var(--clr-list);
   border-radius: 0 0 0.4rem 0.4rem;
   color: var(--clr-filters);
+  box-shadow: 0 rem(8) rem(16) var(--clr-shadow);
 
   &__filters__btn {
     background-color: transparent;
