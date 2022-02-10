@@ -16,7 +16,8 @@ body {
   background-color: var(--clr-bg);
   background-image: url("/images/bg-desktop-light.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto 300px;
+  background-position: top center;
 }
 
 :root.dark-mode body {
