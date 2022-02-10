@@ -48,7 +48,7 @@ body {
   padding: 0;
   font-family: var(--font-josefin);
   background-color: var(--clr-bg);
-  background-image: url("/images/bg-desktop-light.jpg");
+  background-image: url("../../images/bg-desktop-light.jpg");
   background-repeat: no-repeat;
   background-size: auto 300px;
   background-position: top center;
@@ -65,7 +65,7 @@ body {
 }
 
 :root.dark-mode body {
-  background-image: url("/images/bg-desktop-dark.jpg");
+  background-image: url("../../images/bg-desktop-dark.jpg");
 }
 
 h1,
@@ -171,7 +171,7 @@ h1 {
 
 .toggle {
   background-color: transparent;
-  background-image: url("/images/icon-moon.svg");
+  background-image: url("../../images/icon-moon.svg");
   background-repeat: no-repeat;
   background-position: top right;
   border: none;
@@ -183,7 +183,7 @@ h1 {
 }
 
 :root.dark-mode .toggle {
-  background-image: url("/images/icon-sun.svg");
+  background-image: url("../../images/icon-sun.svg");
 }
 
 .list-item__check {
@@ -270,11 +270,29 @@ h1 {
 
 .content__list {
   border-radius: 0.4rem 0.4rem 0 0;
+  overflow-y: auto;
 }
 .content__list .list-item {
   border-radius: 0;
   border-bottom: 1px solid var(--clr-check-border);
   padding: 1.5rem;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.content__list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.content__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
 .content__options {
