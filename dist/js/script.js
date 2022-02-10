@@ -11,8 +11,16 @@ const addTodo = () => {
 
 const createCard = (text) => {
   let card = document.createElement("div");
-  card.classList.add("list-item", "active");
+  card.classList.add("list-item", "active", "draggable");
   card.draggable = true;
+  card.addEventListener("dragstart", () => {
+    card.classList.add("dragging");
+  });
+
+  card.addEventListener("dragend", () => {
+    card.classList.remove("dragging");
+  });
+
   let checkBtn = document.createElement("button");
   checkBtn.classList.add("list-item__check");
   checkBtn.addEventListener("click", markTodo);
