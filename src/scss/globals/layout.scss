@@ -1,15 +1,27 @@
 @use "../util" as *;
 
 body {
+  min-height: max(678px, 100vh);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  .instructions {
+    text-align: center;
+    margin: rem(48) 0;
+
+    p {
+      color: var(--clr-dashed);
+      margin: 0;
+    }
+  }
 }
 
 .content {
-  min-width: rem(300);
+  min-width: rem(350);
   max-width: rem(600);
-  width: rem(600);
+  width: min(90%, rem(600));
   padding: rem(70) rem(25);
   display: flex;
   flex-direction: column;
@@ -66,18 +78,8 @@ body {
         padding: rem(16);
         border-radius: 0.4em;
         box-shadow: 0 rem(-8) rem(16) var(--clr-shadow);
-        transform: translate(-50%, 100%);
+        transform: translate(-50%, 25%);
       }
-    }
-  }
-
-  .instructions {
-    text-align: center;
-    margin-top: rem(48);
-
-    p {
-      color: var(--clr-dashed);
-      margin: 0;
     }
   }
 }

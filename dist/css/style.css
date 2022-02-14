@@ -81,15 +81,25 @@ a:active {
 }
 
 body {
+  min-height: max(678px, 100vh);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+body .instructions {
+  text-align: center;
+  margin: 3rem 0;
+}
+body .instructions p {
+  color: var(--clr-dashed);
+  margin: 0;
 }
 
 .content {
-  min-width: 18.75rem;
+  min-width: 21.875rem;
   max-width: 37.5rem;
-  width: 37.5rem;
+  width: min(90%, 37.5rem);
   padding: 4.375rem 1.5625rem;
   display: flex;
   flex-direction: column;
@@ -146,16 +156,8 @@ body {
     padding: 1rem;
     border-radius: 0.4em;
     box-shadow: 0 -0.5rem 1rem var(--clr-shadow);
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 25%);
   }
-}
-.content .instructions {
-  text-align: center;
-  margin-top: 3rem;
-}
-.content .instructions p {
-  color: var(--clr-dashed);
-  margin: 0;
 }
 
 h1 {
