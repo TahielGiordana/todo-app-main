@@ -15,7 +15,7 @@
 }
 
 .checked {
-  background-image: url("/images/icon-check.svg"), var(--clr-check-bg);
+  background-image: url("../../images/icon-check.svg"), var(--clr-check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;

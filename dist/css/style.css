@@ -199,7 +199,7 @@ h1 {
 }
 
 .checked {
-  background-image: url("/images/icon-check.svg"), var(--clr-check-bg);
+  background-image: url("../../images/icon-check.svg"), var(--clr-check-bg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -246,7 +246,7 @@ h1 {
   width: 1.25rem;
   height: 1.25rem;
   border: none;
-  background: transparent url("/images/icon-cross.svg") no-repeat;
+  background: transparent url("../../images/icon-cross.svg") no-repeat;
 }
 .list-item__delete:hover {
   cursor: pointer;
