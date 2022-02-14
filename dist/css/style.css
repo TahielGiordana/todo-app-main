@@ -150,10 +150,6 @@ body {
   }
 }
 .content .instructions {
-  position: absolute;
-  left: 50%;
-  bottom: 3.125rem;
-  transform: translate(-50%, 0);
   text-align: center;
   margin-top: 3rem;
 }
